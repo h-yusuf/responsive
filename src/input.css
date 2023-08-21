@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "work-sans",sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+    }
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+option{
+    border-radius: 24px !important;
+}
+#labels-chart .apx-legend-position-bottom {
+    position: relative !important;
+    gap: 8px;
+    justify-content: end !important;
+    align-items: end;
+}

@@ -2,7 +2,19 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        "ungu" : "#6B0069",
+        "ijo"  : "#00C669",
+        "mera"  : "#EB5757",
+        "abu"  : "#84849D",
+        "ungu-20"  : "#FCF5FC",
+        "abu-blue"  : "#484869",
+      },
+      fontFamily : {
+        "work-sans" : "work-sans"
+      }
+    },
   },
   plugins: [],
 }
