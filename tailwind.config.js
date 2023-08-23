@@ -12,7 +12,7 @@ module.exports = {
         "abu-blue"  : "#484869",
       },
       fontFamily : {
-        "work-sans" : "work-sans"
+        "work-sans,sans-serief" : "work-sans"
       }
     },
   },

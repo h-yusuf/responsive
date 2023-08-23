@@ -4,8 +4,8 @@
   window.addEventListener("load", function() {
     const getChartOptions = () => {
         return {
-          series: [35.1, 23.5, 2.4, 5.4],
-          colors: ["#1C64F2", "#16BDCA", "#FDBA8C", "#E74694"],
+          series: [1500, 3500, 400],
+          colors: ["#00B7FF", "#64D48A", "#FFD66B"],
           chart: {
             height: 320,
             width: "100%",
@@ -28,21 +28,21 @@
                   total: {
                     showAlways: true,
                     show: true,
-                    label: "Unique visitors",
+                    label: "Total User",
                     fontFamily: "Inter, sans-serif",
                     formatter: function (w) {
                       const sum = w.globals.seriesTotals.reduce((a, b) => {
                         return a + b
                       }, 0)
-                      return `${sum}k`
+                      return `${sum}`
                     },
                   },
                   value: {
                     show: true,
-                    fontFamily: "Inter, sans-serif",
+                    fontFamily: "work-sans, sans-serif",
                     offsetY: -20,
                     formatter: function (value) {
-                      return value + "k"
+                      return value + ""
                     },
                   },
                 },
@@ -55,18 +55,18 @@
               top: -2,
             },
           },
-          labels: ["Direct", "Sponsor", "Affiliate", "Email marketing"],
+          labels: ["Funder (individual)", "Funder (institution)", "Beneficary",],
           dataLabels: {
             enabled: false,
           },
           legend: {
             position: "bottom",
-            fontFamily: "Inter, sans-serif",
+            fontFamily: "work-sans, sans-serif",
           },
           yaxis: {
             labels: {
               formatter: function (value) {
-                return value + "k"
+                return value + ""
               },
             },
           },
