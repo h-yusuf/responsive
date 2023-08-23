@@ -12,8 +12,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
-    <div class="w-full h-full flex justify-center p-32 items-center">
-        <div class="w-40 h-40 bg-black lg:hidden"></div>
+    <div class="w-screen h-screen flex justify-center p-32 items-center ">
+        <div class="w-40 h-40 bg-black rounded-full animate-bounce shadow-xl  shadow-blue-800 hover:scale-110 hover:animate-none">
+            <div class="w-full h-full relative animate-spin ">
+                <div class="w-20 h-20 bg-red-600 absolute animate-spin -top-4 -left-4 rounded-xl "></div>
+                <div class="w-20 h-20 bg-green-600 absolute animate-spin -top-4 -right-4 rounded-xl "></div>
+                <div class="w-20 h-20 bg-blue-600 absolute animate-spin -bottom-4 -left-4 rounded-xl "></div>
+                <div class="w-20 h-20 bg-orange-500 absolute animate-spin -bottom-4 -right-4 rounded-xl "></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

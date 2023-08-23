@@ -40,8 +40,9 @@ option{
     font-weight: 600!important;
     opacity: 50%;
 }
-@media screen and (min-width: 640px) {
-    .sm-hidden{
-        display: none !important;
+/* @media  (max-width: 640px) {
+    #labels-chart .apexcharts-zoomable {
+        height: 60% !important;
     }
 }
+.apexcharts-theme-light */

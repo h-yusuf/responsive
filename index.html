@@ -16,9 +16,13 @@
     <aside id="default-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
-        <div class="h-full px-4 py-5 overflow-y-auto bg-white shadow-inner space-y-4">
-            <div class=" mb-8 flex flex-col items-center mx-8">
-                <p class="text-3xl font-extrabold">Char<span class="text-ungu">tsy</span></p>
+        <div class="h-full px-4 py-5 overflow-y-auto bg-white shadow-inner space-y-4 ">
+            <div class=" mb-8 flex flex-col items-center  mx-8 max-sm:mx-0">
+                <p class="text-3xl font-extrabold max-sm:hidden">Char<span class="text-ungu">tsy</span></p>
+                <div class="flex gap-4 items-center max-sm:justify-start sm:hidden">
+                    <img src="./asset/pp-luffy.png" alt="" class="w-10 h-10 rounded-full">
+                    <p class="text-base">Super Admin</p>
+                </div>
             </div>
             <ul class="space-y-2 font-medium">
                 <li>
@@ -92,7 +96,7 @@
             <div class="flex justify-between gap-4 items-center">
                 <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
                     class="px-3 py-2 flex space-x-4 items-center bg-abu bg-opacity-20 max-sm:bg-white  rounded-lg" type="button">
-                    <ion-icon class="h-5 w-5 " name="globe-outline"></ion-icon>
+                    <ion-icon class="h-5 w-5 max-sm:h-6 max-sm:w-6" name="globe-outline"></ion-icon>
                     <p class="max-sm:hidden">
                         English
                     </p>
@@ -114,7 +118,7 @@
                 </div>
                 <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
                 type="button"
-                class="inline-flex items-center p-2  text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                class="inline-flex items-center p-2  text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none ">
                 <span class="sr-only">Open sidebar</span>
                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +129,7 @@
             </button>
             </div>
             <!-- Dropdown menu -->
-            <div id="dropdownHover" class="z-10 hidden divide-gray-100 rounded-lg shadow w-36 bg-abu bg-opacity-20 max-sm:bg-opacity-80">
+            <div id="dropdownHover" class="z-10 hidden divide-gray-100 rounded-lg shadow w-36 bg-abu bg-opacity-20 max-sm:bg-gray-100">
                 <ul class=" text-sm text-abu-blue" aria-labelledby="dropdownHoverButton">
                     <li>
                         <a href="#"
@@ -211,8 +215,8 @@
                 <div id="donut-chart"></div>
             </div>
         </div>
-        <div class="grid grid-cols-3 grid-rows-1 gap-4">
-            <div class="p-6 grid gap-4">
+        <div class="grid grid-cols-3 grid-rows-1 gap-4 max-sm:grid-cols-1  ">
+            <div class="p-6 grid gap-4 bg-white rounded-lg">
                 <h1 class="font-bold text-lg opacity-70">Top Individual Funder</h1>
                 <div class="grid gap-4">
                     <div class="flex items-center justify-between">
@@ -266,9 +270,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="border border-l-2 border-opacity-70 border-ungu rounded-lg py-1 items-center text-ungu font-semibold">Show More</button>
+                <button class="border border-l-2 border-opacity-70 border-ungu rounded-lg py-1 items-center text-ungu font-semibold hover:bg-ungu transition-all ease-in duration-75 hover:text-white">Show More</button>
             </div>
-            <div class="p-6 grid gap-4">
+            <div class="p-6 grid gap-4 bg-white rounded-lg">
                 <h1 class="font-bold text-lg opacity-70">Top institution Funder</h1>
                 <div class="grid gap-4">
                     <div class="flex items-center justify-between">
@@ -322,9 +326,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="border border-l-2 border-opacity-70 border-ungu rounded-lg py-1 items-center text-ungu font-semibold">Show More</button>
+                <button class="border border-l-2 border-opacity-70 border-ungu rounded-lg py-1 items-center text-ungu font-semibold hover:bg-ungu transition-all ease-in duration-75 hover:text-white">Show More</button>
             </div>
-            <div class="p-6 grid gap-4">
+            <div class="p-6 grid gap-4 bg-white rounded-lg">
                 <h1 class="font-bold text-lg opacity-70">Top Beneficiary</h1>
                 <div class="grid gap-4">
                     <div class="flex items-center justify-between">
@@ -378,7 +382,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="border border-l-2 border-opacity-70 border-ungu rounded-lg py-1 items-center text-ungu font-semibold">Show More</button>
+                <button class="border border-l-2 border-opacity-70 border-ungu rounded-lg py-1 items-center text-ungu font-semibold hover:bg-ungu transition-all ease-in duration-75 hover:text-white">Show More</button>
             </div>
         </div>
     </div>
